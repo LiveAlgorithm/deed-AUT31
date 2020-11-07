@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>CodeGame Pedra, Papel e Tesoura</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+    <div id="sectionContainer">
+        <header>
+            <div id="player">
+                <h2 id="playerName">Voce</h2>
+                <div class="HPContainer">
+                    <div class="HP" id="pHP"></div>
+                </div>
+                <h1 class="indicator" id="pI">0%</h1>
+            </div>
+            <div>
+                <h2>vs</h2>
+            </div>
+            <div id="computer">
+                <h2>Computador</h2>
+                <div class="HPContainer">
+                    <div class="HP" id="cHP"></div>
+                </div>
+                <h1 class="indicator" id="cI">0%</h1>
+            </div>
+        </header>
+        <section>
+            <div id="battleInfo">
+                <div class="info">
+                    <h1>Voce</h1>
+                    <h1 id="playerChoose">-</h1>
+                </div>
+                <div class="info">
+                    <h1>Computador</h1>
+                    <h1 id="computerChoose">-</h1>
+                </div>
+                <div class="info">
+                    <h1>Resultado</h1>
+                    <h1 id="result">-</h1>
+                </div>
+            </div>
+            <h1 id="attemptContainer">Attempt: <span id="attempt">0</span></h1>
+            <h2 id="title">Escolha sua arma</h2>
+            <div id="atkBtnWrapper">
+                <div id="startGame">Start</div>
+                <div id="restart">Restart</div>
+                <div class="atkBtn R"><img src="svg/noun_Fist_477918.svg" alt="Batu"></div>
+                <div class="atkBtn P"><img src="svg/noun_Hand_477922.svg" alt="Kertas"></div>
+                <div class="atkBtn S"><img src="svg/noun_Scissors_477919.svg" alt="Gunting"></div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="attribution">
+            <div class="attrContainer">
+                <a href="https://www.bensound.com">
+                    <div class="attr bensound">
+                        <h3>Background Royalty free Music by</h3>
+                        <img src="images/bensound.png" alt="Bensound">
+                    </div>
+                </a>
+            </div>
+            <div class="attrContainer">
+                <a href="https://thenounproject.com">
+                    <div class="attr">
+                        <h3>Fist, Hand, Scissors by <strong>LiveAlgorithm</strong> from the</h3>
+                        <img src="images/noun-project.png" alt="Noun Project">
+                    </div>
+                </a>
+            </div>
+            <div class="attrContainer">
+                <a href="https://opengameart.org">
+                    <div class="attr open-game-art">
+                        <h3>Sound Effects by <strong>Little Robot Sound Factory</strong> from</h3>
+                        <img src="images/open-game-art.jpg" alt="Open Game Art">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h2 id="author">Made By id: Algorithm#0001</h2>
+    </footer>
+        <audio loop id="bgm" preload>
+            <source src="bgm/bensound-thelounge.mp3" type="audio/mp3">
+        </audio>
+        <audio id="sfxBar" preload>
+            <source src="sfx/Mp3/SpaceEngine/SpaceEngine_Start_00.mp3" type="audio/mp3">
+        </audio>
+        <audio id="win" preload>
+            <source src="sfx/Mp3/UI_Synth/UI_Synth_02.mp3" type="audio/mp3">
+        </audio>
+        <audio id="draw" preload>
+            <source src="sfx/Mp3/UI_Synth/UI_Synth_01.mp3" type="audio/mp3">
+        </audio>
+        <audio id="lose" preload>
+            <source src="sfx/Mp3/UI_Synth/UI_Synth_03.mp3" type="audio/mp3">
+        </audio>
+        <audio id="winMatch" preload>
+            <source src="sfx/Mp3/Jingle_Win_Synth/Jingle_Win_Synth_05.mp3" type="audio/mp3">
+        </audio>
+        <audio id="loseMatch" preload>
+            <source src="sfx/Mp3/UI_Synth/UI_Synth_05.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
