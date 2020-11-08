@@ -1,3 +1,3 @@
 {
-  "prefix":"u!"
+  "prefix":"tb!" // Prefixo adicionado!
 }
